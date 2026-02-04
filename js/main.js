@@ -29,3 +29,35 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("scrolled");
   }
 });
+
+const form = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch(form.ariaDescription,{
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json',
+      },
+    });
+
+    if (response.ok) {
+      form.reset();
+      formStatus.textContent = "message sent succesfully. I'll be in touch.";
+      formStatus.classList.add("success");
+    } else{
+      formStatus.textContent = "Oops! There was a problem submitting your form";
+      formStatus.classList.add("error");
+    }
+  } catch(error) {
+    formStatus.textContent = "Oops! There was a problem submitting your form";
+    formStatus.classList.remove("success");
+    formStatus.classList.add("error");
+  }
+});

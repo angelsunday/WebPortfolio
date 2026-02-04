@@ -50,6 +50,9 @@
             <div class="skill-card">JavaScript</div>
             <div class="skill-card">React</div>
             <div class="skill-card">Node.js</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">Wordpress</div>
           </div>
         </div>
         </div>
@@ -111,15 +114,77 @@
       </section>
 
       <!--CONTACT-->
-      <section id="contact" class="contact">
-        <div class="container">
+       <section id="contact">
+      <div class="container">
+        <div class="contact-card">
           <h2>Contact Me</h2>
-          <p>Feel free to reach out to me via email or social media.</p>
-          <p>Email: angelakiskiriaki@gmail.com</p>
-          <p>Github | LinkedIn | Portfolio</p>
-        </div>
-      </section>
+          <p>
+            I'm currently open to new opportunities and collaborations.
+            Feel free to reach out to discuss potential projects or just to say hello!
+          </p>
 
-      <script src="js/main.js"></script>
-    </body>
+          <form
+            action="https://formspree.io/f/contact"
+            method="POST"
+            class="contact-form"
+            id="contact-form">
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <input 
+            type="hidden" 
+            name="_subject" 
+            value="New portfolio contact" 
+            />
+            <input 
+            type="text" 
+            name="_gotcha" 
+            style="display:none"
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required>
+            </textarea>
+            <button type="submit" class="btn">Send Message</button>
+            
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-top">
+          <nav class="footer-nav">
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          
+          <div class="footer-socials">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+
+        <p class="footer-text">© 2026 Kiriaki Angelaki.</p>
+      </div>
+    </footer>
+
+   
+    <script src="js/main.js"></script>
+  </body>
 </html>
