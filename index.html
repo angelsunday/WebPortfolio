@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angelakis Kiriaki | Web Developer</title>
+    <title>Angelakis Sunday | Web Developer</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <aside class="sidebar">
+      <div class="logo">
+        Sunday Angelakis
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
     <!--NAVBAR-->
-    <nav class="navbar">
+ <!--    <nav class="navbar">
       <div class="container nav-container">
         <div class="logo">
           <a href="#hero">Kiriaki Angelakis</a>
@@ -20,15 +31,16 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="menu-toggle">&#9776;</div> <!-- Hamburger Menu Icon -->
-    </nav>
-    <!-- HERO SECTION -->
+      <div class="menu-toggle">&#9776;</div> Hamburger Menu Icon
+    </nav> -->
+   <main class="content">
+     <!-- HERO SECTION -->
      <header class="hero">
-      <div class="container">
-        <h1>Hi, I'm Kiriaki</h1>
-        <p>Web Developer | Frontend Specialist | UX-focused</p>
-        <a href="#projects" class="btn">View My Work</a>
-      </div>
+        <div class="container">
+          <h1>Hi, I'm Sunday</h1>
+          <p>Web Developer | Frontend Specialist | UX-focused</p>
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
      </header>
 
      <!-- ABOUT ME -->
@@ -43,7 +55,7 @@
       <!--SKILLS-->
       <section id="skills">
         <div class="container">
-          <h2 class="section-title">Skills</h2>
+           <h2 class="section-title">Skills</h2>
           <div class="skills-grid">
             <div class="skill-card">HTML</div>
             <div class="skill-card">CSS</div>
@@ -55,7 +67,6 @@
             <div class="skill-card">Wordpress</div>
           </div>
         </div>
-        </div>
       </section>
 
       <!--PROJECTS-->
@@ -66,26 +77,23 @@
             <article class="project-card">
               <h3>Carnival Website</h3>
                <div class="project-tags">
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">JavaScript</span>
+                  <span class="tag">Wordpress</span>
                 </div>
               <p>A responsive website for a local carnival event featuring interactive elements and dynamic content.
               </p>
               <div class="project-links">
                 <a href ="#" class="project-link">Live</a>
-                <a href ="#" class="project-link">Code</a>
               </div>
             </article>
 
             <article class="project-card">
-              <h3>Business Landing Page</h3>
+                <h3>Business Landing Page</h3>
                 <div class="project-tags">
                   <span class="tag">HTML</span>
                   <span class="tag">CSS</span>
                   <span class="tag">JavaScript</span>
                 </div>
-              <p>Responsive landing page for a small business,
+                <p>Responsive landing page for a small business,
                 focused on clarity, speed, and conversions.</p>
                 <div class="project-links">
                   <a href="#" class="project-link">Live</a>
@@ -114,77 +122,79 @@
       </section>
 
       <!--CONTACT-->
-       <section id="contact">
-      <div class="container">
-        <div class="contact-card">
-          <h2>Contact Me</h2>
-          <p>
-            I'm currently open to new opportunities and collaborations.
-            Feel free to reach out to discuss potential projects or just to say hello!
-          </p>
+      <section id="contact">
+        <div class="container">
+          <div class="contact-card">
+                <h2>Contact Me</h2>
+                <p>
+                I'm currently open to new opportunities and collaborations.
+                Feel free to reach out to discuss potential projects or just to say hello!
+                </p>
 
-          <form
-            action="https://formspree.io/f/contact"
-            method="POST"
-            class="contact-form"
-            id="contact-form">
+            <form
+              action="https://formspree.io/f/contact"
+              method="POST"
+              class="contact-form"
+              id="contact-form">
 
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <input 
-            type="hidden" 
-            name="_subject" 
-            value="New portfolio contact" 
-            />
-            <input 
-            type="text" 
-            name="_gotcha" 
-            style="display:none"
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="5"
-              required>
-            </textarea>
-            <button type="submit" class="btn">Send Message</button>
-            
-            <p class="form-status" id="form-status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-top">
-          <nav class="footer-nav">
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          
-          <div class="footer-socials">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <input 
+              type="hidden" 
+              name="_subject" 
+              value="New portfolio contact" 
+              />
+              <input 
+              type="text" 
+              name="_gotcha" 
+              style="display:none"
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required>
+              </textarea>
+              
+              <button type="submit" class="btn">Send Message</button>
+              
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
           </div>
         </div>
+      </section>
 
-        <p class="footer-text">© 2026 Kiriaki Angelaki.</p>
-      </div>
-    </footer>
+      <footer class="site-footer">
+          <div class="container footer-inner">
+            <div class="footer-top">
+              <nav class="footer-nav">
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+              </nav>
+              
+              <div class="footer-socials">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+
+            <p class="footer-text">© 2026 Kiriaki Angelaki.</p>
+          </div>
+      </footer>
 
    
-    <script src="js/main.js"></script>
+     <script src="js/main.js"></script>
+    </main>
   </body>
 </html>
