@@ -92,7 +92,7 @@ section.title {
   position: fixed;
   left:0;
   top:0;
-  background-image: url("../images/sidebar-bg.jpg");
+  background-image: url("../assets/images/sidebar-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -182,8 +182,6 @@ section.title {
 
   .menu-toggle {
     display: flex;
-    align-items: center;
-    justify-content: center;
     position:fixed;
     top: 1rem;
     left: 1rem;
@@ -226,13 +224,15 @@ section.title {
 
   .hero h1 {
     font-size: clamp(2rem, 5vw, 2.8rem);
+    color: var(--text-primary);
   }
 
   .hero p{
     font-size: 1.1rem;
+    color: var(--text-primary);
   }
 
-   .about-card,
+  .about-card,
   .contact-card,
   .project-card,
   .skill-card {
@@ -391,10 +391,10 @@ section.title {
 }
 
 .menu-toggle {
-  display: none;
   font-size: 1.8rem;
-  color:#460066;
+  color:#fff;
   cursor: pointer;
+  background: transparent;
 }
 
 
@@ -512,10 +512,6 @@ section {
   color: var(--text-primary);
 }
 
-.idevicon-html5-plain-wordmark {
-  size: 24px;
-}
-
 .skill-card h3 {
   margin-bottom: var(--space-2); 
 }
@@ -528,9 +524,24 @@ section {
 
 .skill-card:hover {
   background:rgba(75, 0, 109, 0.25);
-  color: var(--text-primary);
+  color: var(--purple-muted);
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(7, 7, 7, 0.6);
+}
+
+.skill-card i {
+  font-size: 2rem;
+  color: var(--purple-muted);
+  display: block;
+  margin-bottom: var(--space-2);
+  transition: color 0.3s ease;
+}
+
+.skill-card span {
+  display: block;
+  font-weight: 500;
+  margin-top: 0.25rem;
+  color:var(--text-primary);
 }
 
 /* PROJECTS */
